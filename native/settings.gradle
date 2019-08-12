@@ -4,3 +4,4 @@ evaluate(new File(                                                      // new
         settingsDir.parentFile,                                               // new
         'my_flutter/.android/include_flutter.groovy'                          // new
 ))
+
