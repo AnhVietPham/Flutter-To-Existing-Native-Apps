@@ -32,21 +32,20 @@ class Router extends StatefulWidget {
 }
 
 Widget getWidget() {
-//  String router = window.defaultRouteName;
-//  switch (router) {
-//    case 'flutter1':
-//      return flutter_project1.MyApp();
-//      break;
-//    case 'flutter2':
-//      return flutter_project2.MyApp();
-//      break;
-//    case 'flutter3':
-//
-//      break;
-//    default:
-//      return MaterialApp();
-//  }
-  return flutter_project3.MyApp();
+  String router = window.defaultRouteName;
+  switch (router) {
+    case 'flutter1':
+      return flutter_project1.MyApp();
+      break;
+    case 'flutter2':
+      return flutter_project2.MyApp();
+      break;
+    case 'flutter3':
+      return flutter_project3.MyApp();
+      break;
+    default:
+      return MaterialApp();
+  }
 }
 
 class _RouterState extends State<Router> {
@@ -59,20 +58,17 @@ class _RouterState extends State<Router> {
 void showFlutterView(BuildContext context, String initRouteName) {
   switch (initRouteName) {
     case 'flutterView1':
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (BuildContext context) {
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) {
         return flutter_project1.MyApp();
       }));
       break;
     case 'flutterView2':
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (BuildContext context) {
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) {
         return flutter_project2.MyApp();
       }));
       break;
     case 'flutterView3':
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (BuildContext context) {
+      Navigator.of(context).push(MaterialPageRoute(builder: (context) {
         return flutter_project3.MyApp();
       }));
       break;
