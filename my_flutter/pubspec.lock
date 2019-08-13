@@ -41,6 +41,27 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_project1:
+    dependency: "direct main"
+    description:
+      path: "..\\Flutter-Project1"
+      relative: true
+    source: path
+    version: "1.0.0+1"
+  flutter_project2:
+    dependency: "direct main"
+    description:
+      path: "..\\Flutter-Project2"
+      relative: true
+    source: path
+    version: "1.0.0+1"
+  flutter_project3:
+    dependency: "direct main"
+    description:
+      path: "..\\Flutter-Project3"
+      relative: true
+    source: path
+    version: "1.0.0+1"
   flutter_test:
     dependency: "direct dev"
     description: flutter

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">native</string>
+    <string name="open_flutter_1">Open Flutter 1</string>
+    <string name="open_flutter_2">Open Flutter 2</string>
+    <string name="open_flutter_3">Open Flutter 3</string>
 </resources>
