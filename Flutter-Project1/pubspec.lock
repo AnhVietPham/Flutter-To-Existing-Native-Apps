@@ -41,6 +41,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_project2:
+    dependency: transitive
+    description:
+      path: "..\\Flutter-Project2"
+      relative: true
+    source: path
+    version: "1.0.0+1"
+  flutter_project3:
+    dependency: transitive
+    description:
+      path: "..\\Flutter-Project3"
+      relative: true
+    source: path
+    version: "1.0.0+1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -60,6 +74,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.6"
+  my_flutter:
+    dependency: "direct main"
+    description:
+      path: "..\\my_flutter"
+      relative: true
+    source: path
+    version: "1.0.0+1"
   path:
     dependency: transitive
     description:

@@ -41,6 +41,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_core:
+    dependency: transitive
+    description:
+      path: "..\\flutter_core"
+      relative: true
+    source: path
+    version: "0.0.1"
   flutter_project1:
     dependency: "direct main"
     description:
