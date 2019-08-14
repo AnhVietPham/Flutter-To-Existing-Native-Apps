@@ -1,10 +1,8 @@
 package com.avp.anative
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.view.ViewGroup
-import android.widget.FrameLayout
-import io.flutter.facade.Flutter
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,24 +17,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         btnOpenFlutter1.setOnClickListener {
-            val flutterView = Flutter.createView(this, lifecycle, FLUTTER_ONE)
-            val frameLayout =
-                FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-            addContentView(flutterView, frameLayout)
+            val intent = Intent(this, DemoFlutterActivity::class.java)
+                .putExtra("route", FLUTTER_ONE)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
         }
 
         btnOpenFlutter2.setOnClickListener {
-            val flutterView = Flutter.createView(this, lifecycle, FLUTTER_TWO)
-            val frameLayout =
-                FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-            addContentView(flutterView, frameLayout)
+            val intent = Intent(this, DemoFlutterActivity::class.java)
+                .putExtra("route", FLUTTER_TWO)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
         }
 
         btnOpenFlutter3.setOnClickListener {
-            val flutterView = Flutter.createView(this, lifecycle, FLUTTER_TREE)
-            val frameLayout =
-                FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-            addContentView(flutterView, frameLayout)
+            val intent = Intent(this, DemoFlutterActivity::class.java)
+                .putExtra("route", FLUTTER_TREE)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
         }
     }
 }

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_project1/main.dart' as flutter_project1;
 import 'package:flutter_project2/main.dart' as flutter_project2;
 import 'package:flutter_project3/main.dart' as flutter_project3;
-import 'package:flutter_core/flutter_core.dart';
 import 'dart:ui';
 import 'dart:async';
 import 'retart_widget.dart';
